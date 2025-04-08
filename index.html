@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PrimeRent - Агентство аренды квартир</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>PrimeRent</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
+    <main class="container">
+        <section class="hero">
+            <h2>Найдите идеальную квартиру для аренды</h2>
+            <p>Более 1000 проверенных вариантов в вашем городе</p>
+            <a href="catalog.html" class="btn">Посмотреть предложения</a>
+        </section>
+
+        <section class="advantages">
+            <h2>Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <h3>Безопасность</h3>
+                    <p>Все квартиры проверены и собственники верифицированы</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Экономия времени</h3>
+                    <p>Подберем варианты за 1 день по вашим критериям</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Юридическая поддержка</h3>
+                    <p>Поможем правильно оформить договор аренды</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Актуальные предложения</h2>
+            <div class="apartments-grid" id="featuredApartments">
+                <!-- Квартиры будут загружены через JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 PrimeRent. Все права защищены.</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
